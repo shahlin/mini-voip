@@ -1,8 +1,8 @@
 import socket
 
 class MessagingServer:
-    LOCAL_IP = "127.0.0.1"
-    LOCAL_PORT = 20001
+    LOCAL_IP = "192.168.1.130"
+    LOCAL_PORT = 20002
 
     BUFFER_SIZE = 1024
 
