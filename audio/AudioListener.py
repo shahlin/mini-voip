@@ -31,10 +31,13 @@ class AudioListener:
         listener_thread.setDaemon(True)
         listener_thread.start()
 
-        print("Started listening")
+        Log.debug("Started listening")
 
-        while True:
-            self.output_stream.write(self.stream_data)
+        # while True:
+        #     self.output_stream.write(self.stream_data)
+
+    def play(self, bytes_to_play):
+        self.output_stream.write(bytes_to_play)
 
     def run_listener(self):
         counter = 0
